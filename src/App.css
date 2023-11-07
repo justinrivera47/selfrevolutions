@@ -1,0 +1,7 @@
+.container {
+  width: 50%;
+  border: 2px solid black;
+  height: 50%;
+  justify-content: center;
+  background-color: yellow;
+}

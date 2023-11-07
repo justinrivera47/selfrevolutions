@@ -1,24 +1,52 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, createRoutesFromElements, createBrowserRouter, Link, Outlet, RouterProvider } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
+import Contact from './Contact';
+import Solutions from './Solutions';
+import logo from '../assets/images/logo-01.jpeg';
+
+const Root = () => {
+
+  return (
+    <>
+      <header>
+        <div className="logo">
+            <img  src={logo} srcSet={logo} alt="Logo"/>
+        </div>
+        <div>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+          <Link to='/solutions'>Solutions</Link>
+          <Link to='/contact'>Contact</Link>
+        </div>
+        <button>Book Now</button>
+      </header>
+
+        <div>
+          <Outlet />
+        </div>
+    </>
+  )
+}
 
 const NavBar = () => {
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Root />}>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/solutions" element={<Solutions />} />
+        <Route path="/contact" element={<Contact />} />
+      </Route>
+    )
+  )
+
   return (
-      <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/solutions">Solutions</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </nav>
+    <div>
+    <RouterProvider router={router} />
+  </div>
   )
 }
 
