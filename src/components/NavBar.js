@@ -4,18 +4,19 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Solutions from './Solutions';
-import logo from '../assets/images/logo.jpeg';
+import logo from '../assets/images/logo.png';
 
 const Root = () => {
 
-const clickToHome = () => {
-  return <Link to='/'></Link>
-}
+//I have to fix the logo to make it click to home
+// const clickToHome = () => {
+//   return <Link to='/'></Link>
+// }
 
   return (
     <>
       <header>
-          <div className="logo" onClick={clickToHome}>
+          <div className="logo">
               <img  src={logo} alt="Logo"/>
           </div>
         <nav className='navbar'>
