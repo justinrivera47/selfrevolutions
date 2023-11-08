@@ -4,23 +4,29 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Solutions from './Solutions';
-import logo from '../assets/images/logo-01.jpeg';
+import logo from '../assets/images/logo.jpeg';
 
 const Root = () => {
+
+const clickToHome = () => {
+  return <Link to='/'></Link>
+}
 
   return (
     <>
       <header>
-        <div className="logo">
-            <img  src={logo} srcSet={logo} alt="Logo"/>
-        </div>
-        <div>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/solutions'>Solutions</Link>
-          <Link to='/contact'>Contact</Link>
-        </div>
-        <button>Book Now</button>
+          <div className="logo" onClick={clickToHome}>
+              <img  src={logo} alt="Logo"/>
+          </div>
+        <nav className='navbar'>
+          <ul className='middle-bar'>
+            <li className="nav-links"><Link to='/'>Home</Link></li>
+            <li className="nav-links"><Link to='/about'>About</Link></li>
+            <li className="nav-links"><Link to='/solutions'>Solutions</Link></li>
+            <li className="nav-links"><Link to='/contact'>Contact</Link></li>
+          </ul>
+        </nav>
+          <button className='button'>Book Now</button>
       </header>
 
         <div>
