@@ -5,19 +5,21 @@ import About from './About';
 import Contact from './Contact';
 import Solutions from './Solutions';
 import logo from '../assets/images/logo.png';
+import { useNavigate } from 'react-router-dom';
 
 const Root = () => {
+  const navigate = useNavigate();
 
 //I have to fix the logo to make it click to home
-// const clickToHome = () => {
-//   return <Link to='/'></Link>
-// }
+const clickToHome = () => {
+  navigate('/');
+}
 
   return (
     <>
       <header>
           <div className="logo">
-              <img  src={logo} alt="Logo"/>
+              <img  src={logo} alt="Logo" onClick={clickToHome}/>
           </div>
         <nav className='navbar'>
           <ul className='middle-bar'>
