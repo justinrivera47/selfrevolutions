@@ -1,5 +1,6 @@
 import React from 'react'
-import test from '../assets/images/testimonial.png'
+import testimonial from '../assets/images/testimonial.png'
+import woman from '../assets/images/womanphone.jpeg'
 
 const AboutSection = () => {
   return (
@@ -23,7 +24,7 @@ const AboutSection = () => {
             <li>Point 5</li>
           </ul>
           <div className="testimonial">
-            <img src={test} alt="Person" />
+            <img src={testimonial} alt="Person" />
             <div className='testimonial-content'>
               <q>A brief testimonial from a satisfied customer.</q>
               <p className="testimonial-name">Justin Rivera <span>- Founder Self Revolutions</span></p>
@@ -31,11 +32,11 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="right-column">
-        <div className="left-square">10 years of experience</div>
-        <div className="middle-picture">
-          <img src="middle-image.jpg" alt="Middle" />
-        </div>
-        <div className="right-design-div"></div>
+          <div className="left-square">10 years of experience</div>
+          <div className="middle-picture">
+            <img src={woman} alt="Middle" />
+          </div>
+          <div className="right-design-div"></div>
       </div>
       </div>
     </section>
