@@ -65,6 +65,7 @@ body {
 /*Home css*/
 .hero {
   /* background-image: url('your-background-image.jpg'); */
+  background-color: antiquewhite; /*for now until I get pictures.*/
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -76,14 +77,14 @@ body {
 
 /* Style for the content in the middle */
 .content {
-  text-align: center;
+  text-align: left;
   background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent background to the content */
-  padding: 20px;
+  padding: 80px;
   border-radius: 10px;
 }
 
 .hero-title{
-  font-size: 2em;
+  font-size: 2.5em;
   margin: 0;
 }
 
@@ -104,4 +105,77 @@ body {
 
 .hero-button:hover {
     background-color: #3f0289b8;
+}
+
+/* About section in home component */
+
+/* Styles for the "About" section */
+.about-section {
+  padding: 300px 200px 70px 200px;
+  background-color: #e7e7e7;
+  border: 2px black solid;
+}
+
+.about-content {
+  border: 2px yellow solid;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-column {
+  width: 50%;
+  border: 2px green solid;
+}
+
+.left-column h2 {
+  text-align: left;
+  font-weight: bold;
+  font-size: 3.5em;
+  margin: 0;
+  border: #390684 2px solid;
+}
+
+.left-column p {
+  border: #390684 1px solid;
+  font-size: 1.1em;
+  text-align: left;
+  line-height: 1.5;
+  color: gray;
+  /* letter-spacing: .1rem; */
+}
+
+.left-column ul {
+  border: #390684 2px solid;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.right-column {
+  width: 50%;
+  border: 2px blue solid;
+}
+
+.purple {
+  color: #390684;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-bottom: 20px;;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.testimonial-name {
+  font-weight: bold;
 }

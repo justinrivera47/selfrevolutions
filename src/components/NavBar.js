@@ -10,10 +10,9 @@ import { useNavigate } from 'react-router-dom';
 const Root = () => {
   const navigate = useNavigate();
 
-//I have to fix the logo to make it click to home
-const clickToHome = () => {
-  navigate('/');
-}
+  const clickToHome = () => {
+    navigate('/');
+  }
 
   return (
     <>

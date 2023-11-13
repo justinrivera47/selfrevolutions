@@ -1,14 +1,20 @@
 import React from 'react'
+import AboutSection from './AboutSection'
 
 const Home = () => {
   return (
+    <>
     <div className="hero">
       <div className="content">
-        <h1 className="hero-title">Self Revolutions</h1>
+      <p className='topper'><span className='purple'>/</span> Build Your Foundation.</p>
+        <h1 className="hero-title">Discover Your Inner Confidence</h1>
+        <h1 className="hero-title">Through Our Customized Solutions.</h1>
         <p className='hero-p'>Revolt Against Your Old Self.</p>
         <button className="hero-button">Book Now</button>
       </div>
     </div>
+    <AboutSection />
+    </>
   )
 }
 
