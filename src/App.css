@@ -127,7 +127,7 @@ body {
   border: 2px green solid;
 }
 
-.left-column h2 {
+.section-title {
   text-align: left;
   font-weight: bold;
   font-size: 3.5em;
@@ -135,7 +135,7 @@ body {
   border: #390684 2px solid;
 }
 
-.left-column p {
+.section-paragraph {
   border: #390684 1px solid;
   font-size: 1.1em;
   text-align: left;
@@ -227,3 +227,38 @@ body {
   left: 30px;
   z-index: -10;
 } */
+
+/* Expertise section */
+.our-expertise {
+  display: flex;
+  height: 100vh;
+}
+
+.expertise {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc; /* Example border for visualization */
+}
+
+.expertise.left-column {
+  background-color: rgb(140, 140, 140); 
+  /* Example background color for the left column */
+}
+
+.expertise.right-column {
+  background-color: #e0e0e0; /* Example background color for the right column */
+}
+
+.lower-div {
+  margin-top: 60%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid pink;
+  border-radius: 5%;
+  padding:10%;
+}
+
+.status-container {
+  display: flex;
+}
