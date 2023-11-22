@@ -1,41 +1,39 @@
 import React from 'react'
 import AboutSection from './AboutSection'
 import Hero from './Hero'
+import Expertise from './Expertise'
 
 const Home = () => {
   return (
     <>
     <Hero />
     <AboutSection />
-    <div className="our-expertise">
-      <div className="expertise left-column">
-      <div className="background-image"></div>
-        <div className="lower-div">
-          <h3>Specific Skills</h3>
-          <p>Experential Learning</p>
-          <p>Self Discovery</p>
-          <p>Collective Education</p>
-        </div>
+    <Expertise />
+    <div className="our-courses">
+      <div className='our-courses-content'>
+        <p className='topper'><span className='purple'>/</span> Our Courses.</p>
+        <h2 className="section-title">We Provide <span className='purple'>The Best Courses</span> For You</h2>
+        <p className='section-paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua erat libero condimentum metus.</p>
       </div>
-      <div className="expertise right-column">
-        <div className="expertise-container">
-          <p className='topper'><span className='purple'>/</span> Our Expertise.</p>
-          <h2 className='section-title'>We Are <span className='purple'>Experts</span> In The Field Of Public Speaking</h2>
-          <p className="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor in reprehenderit.</p>
+      <div className="course-cards">
+        <div className="course-card">
+          <div className='img-filler'>X</div>
+          <button className="hero-button">Join now</button>
+          <h3>Course Title Here</h3>
+          <p className='section-paragraph'>Lorem ipsum dolor Lorem dfiroqnv fndjawvnrjewa fdnajvndfav fndjaio</p>
         </div>
-        <div className="status-container">
-          <div className="status-item">
-            <img src="/images/icons/icon_1.png" alt="" />
-            <h3>Successful Student</h3>
-            <p>Lorem ipsum dolor sit amet consectet adipiscing elit sedo.</p>
-          </div>
-          <div className="status-item">
-            <img src="/images/icons/icon_1.png" alt="" />
-            <h3>Successful Student</h3>
-            <p>Lorem ipsum dolor sit amet consectet adipiscing elit sedo.</p>
-          </div>
+        <div className="course-card">
+          <div className='img-filler'></div>
+          <button className="hero-button">Join now</button>
+          <h3>Course Title Here</h3>
+          <p className='section-paragraph'>Lorem ipsum dolor Lorem dfiroqnv fndjawvnrjewa fdnajvndfav fndjaio</p>
         </div>
-        <button className="hero-button">Show More</button>
+        <div className="course-card">
+          <div className='img-filler'></div>
+          <button className="hero-button">Join now</button>
+          <h3>Course Title Here</h3>
+          <p className='section-paragraph'>Lorem ipsum dolor Lorem dfiroqnv fndjawvnrjewa fdnajvndfav fndjaio</p>
+        </div>
       </div>
     </div>
     </>

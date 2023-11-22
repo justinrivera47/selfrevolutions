@@ -262,3 +262,36 @@ body {
 .status-container {
   display: flex;
 }
+
+/* This is for the courses section */
+
+.our-courses {
+  height: 100vh;
+}
+
+.img-filler {
+  background-color:#390684;
+  width: 290px;
+  height: 200px;
+}
+
+.course-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.course-card {
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 40%;
+  width: 33.33%;
+}
+.course-card .section-paragraph {
+  margin: 0;
+  padding: 10px;
+}
