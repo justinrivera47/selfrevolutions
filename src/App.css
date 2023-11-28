@@ -231,7 +231,7 @@ body {
 /* Expertise section */
 .our-expertise {
   display: flex;
-  height: 100vh;
+  height: 100svh;
 }
 
 .expertise {
@@ -295,3 +295,22 @@ body {
   margin: 0;
   padding: 10px;
 }
+
+.blog-post-section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 75svh 75svh;
+  grid-gap: 34px;
+}
+
+.blog-post-section {
+  background-color: grey;
+}
+
+/* .mid-div {
+  width:60px;
+  height: 60px;
+  background-color: #390684;
+  position: absolute;
+  top: 0;
+} */
